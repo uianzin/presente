@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.carousel-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    background-color: #ffffff;
+    padding: 50px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.music-container {
+    margin-top: 30px;
+}
+
+audio {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
