@@ -1,0 +1,176 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f1f1;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #ff6363;
+  }
+  
+  header p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Carrossel de Fotos */
+  .gallery-carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel img {
+    width: 100%;
+    max-width: 300px; /* Reduz o tamanho das imagens */
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  button.prev,
+  button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+  
+  button.prev:hover,
+  button.next:hover {
+    background-color: #ff6363;
+  }
+  
+  /* Música com Imagem */
+  .music {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .music h2 {
+    font-size: 1.5rem;
+    color: #ff6363;
+  }
+  
+  .music-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .music-container img {
+    width: 150px; /* Ajustado para tamanho menor */
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  audio {
+    width: 100%;
+    max-width: 300px;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  /* História */
+  .story {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .story h2 {
+    font-size: 1.8rem;
+    color: #ff6363;
+  }
+  
+  .story p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Rodapé */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ff6363;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .music-container img {
+      width: 120px; /* Menor imagem em telas pequenas */
+      height: 120px;
+    }
+  
+    button.prev,
+    button.next {
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    header p {
+      font-size: 0.9rem;
+    }
+  
+    .story h2 {
+      font-size: 1.4rem;
+    }
+  
+    .story p {
+      font-size: 0.9rem;
+    }
+  
+    audio {
+      max-width: 250px;
+    }
+  }
+  
